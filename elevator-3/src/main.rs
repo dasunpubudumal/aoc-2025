@@ -24,7 +24,7 @@ fn main() {
 
     for bank in input {
         let mut max = 0;
-        let mut bank_vector: Vec<u32> = bank.chars().map(|c| c.to_digit(10).unwrap()).collect();
+        let bank_vector: Vec<u32> = bank.chars().map(|c| c.to_digit(10).unwrap()).collect();
         for l in 0..bank_vector.len() {
             let lval = bank_vector[l];
             for r in (l + 1)..bank_vector.len() {
